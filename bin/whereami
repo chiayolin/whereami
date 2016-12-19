@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+# NAME
+#   whereami --  Print Public IP and Geolocation
+#
+# SYNOPSIS
+#   whereami
+#
+# DESCRIPTION
+#   Print machine's public IP and its respective geolocation.
+
+require 'json'
+
+ip = JSON.parse %x(curl -s ipinfo.io/$(curl -s ipecho.net/plain))
+ip.each { |key, value| value.to_s.empty? ? ip[key] = "n/a" : nil }
+
+puts "#{ip['ip']}\n#{ip['city']}, #{ip['region']}, #{ip['country']}"
