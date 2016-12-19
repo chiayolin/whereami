@@ -36,4 +36,4 @@ Contact
 License
 -------
 
-[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://raw.githubusercontent.com/chiayolin/nwlogin/master/LICENSE.txt)
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://raw.githubusercontent.com/chiayolin/whereami/master/LICENSE)
